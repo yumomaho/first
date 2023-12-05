@@ -1,0 +1,36 @@
+console.log("Welcome to the continents quiz!");
+console.log("Press Start to start");
+//Start with start button
+//Start quiz
+onEvent("start", "click", function( ) {
+  setScreen("screen2");
+});
+onEvent("Africa", "click", function( ) {
+  setScreen("Losescreen");
+});
+onEvent("SouthAmerica", "click", function( ) {
+  setScreen("Losescreen");
+});
+onEvent("Oceania", "click", function( ) {
+  setScreen("Losescreen");
+});
+onEvent("asia", "click", function( ) {
+  setScreen("screen3");
+});
+//Move onto next screen
+onEvent("CentralAsia", "click", function( ) {
+  setScreen("Win");
+  console.log("Good Job!");
+  playSound("sound://default.mp3", true);
+});
+onEvent("Romania", "click", function( ) {
+  setScreen("Losescreen");
+});
+onEvent("NorthAsia", "click", function( ) {
+  setScreen("Losescreen");
+});
+onEvent("Balkans", "click", function( ) {
+  setScreen("Losescreen");
+});
+//End game
+//
